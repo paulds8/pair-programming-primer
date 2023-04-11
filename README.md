@@ -10,11 +10,21 @@ programmers switch roles frequently.
 
 ## Benefits of Pair Programming
 
-- Increased productivity
-- Improved code quality
-- Faster learning for new team members
-- Reduced number of bugs
-- Increased knowledge sharing
+Pair programming has some great benefits that can help you become a better
+programmer:
+
+- **Increased productivity** - Two brains are better than one! Working together
+  can help you get more done in less time.
+- **Improved code quality** - With two people reviewing the code as it's being
+  written, there's a better chance of catching errors and improving the overall
+  quality of the code.
+- **Faster learning for new team members** - Pair programming can be a great way
+  for new team members to get up to speed on the codebase and learn from more
+  experienced programmers.
+- **Reduced number of bugs** - Catching errors early on can save you a lot of
+  time and headaches down the road.
+- **Increased knowledge sharing** - By working together, you can share knowledge
+  and learn from each other, making you both better programmers in the long run.
 
 ## Tips for success
 
@@ -45,79 +55,12 @@ programmers switch roles frequently.
 
 - **Take breaks and discuss issues**
 
-  Pair programming can be intense, so it's
-  important to take breaks and discuss any issues that arise. This can help
-  prevent burnout and ensure that both programmers are on the same page
-  regarding any challenges that arise.
+  Pair programming can be intense, so it's important to take breaks and discuss
+  any issues that arise. This can help prevent burnout and ensure that both
+  programmers are on the same page regarding any challenges that arise.
 
 ## A Small Pair Programming Exercise
 
-### Getting started [10 mins]
-
-1. Split up into pairs. You will take turns being a "driver" and a "navigator".
-   Decide who will be participant A and who will be participant B.
-2. We will use VS Code for this exercise. Ensure both of you have the "Live Share"
-   extension installed.
-3. Participant A: clone this repo to you machine and start a live share session
-   by clicking the Live Share icon in your side menu bar and clicking "Share".
-   You may be asked to sign-in. Once the session is initiated, send the URL
-   which should have automatically copied to your clipboard to your partner.
-4. Participant B: follow the link and when prompted click "Open in VS Code".
-   Follow the prompts.
-5. Participant A: Keep an eye on the lower right of your screen for a pop-up;
-   you need to accept the connection. Once this is done, you should now see your
-   partner's name under "Participants". If your partner is in read-only mode,
-   right click their name and enable read-write access.
-6. Congratulations! You are both now in a live share session and ready to start
-   pair programming in an interactive fashion.
-
-### Task 1 [10 mins]
-
-Participant A: Driver
-Participant B: Navigator
-
-1. Run `pip install -r requirements.txt` in your environment of choice (virtual
-   environment recommended).
-2. Take a look at `main.py`. Run the file and see what the output looks like.
-3. When executed, this program queries an open exchange rate API with a given
-   currency base; calculates the relative difference in percentage between the
-   base currency and all the paired currencies; and finally prints the currency
-   that it is strongest and weakest against.
-4. Review `main.py` from the top down. Participant A will be driving (typing);
-   Participant B will follow along and review each line of code in real time as
-   you update this script, highlighting anything you've missed and making
-   recommendations along the way. Both of you will have an active cursor for
-   inputting code and highlighting exactly what you are referring to. Update the
-   file to have a better coverage of things like exception handling, docstrings,
-   comments, type hints, improved code readability, etc.
-
-### Task 2 [10 mins]
-
-Participant A: Navigator
-Participant B: Driver
-
-1. Switching roles (Participant B is in the driver's seat now), now take a look at
-2. `test_main.py`. Currently there are only tests for `get_exchange_rates()`.
-3. Run `pytest --cov-report term-missing --cov=main test_main.py` to see how
-   much of the code is touched by this test. Participant A will need to give
-   you permission to execute code in their terminal.
-4. Check that the existing tests run either by clicking the Testing icon in the
-   side menu and clicking the play button or executing `pytest` in the terminal.
-   Note: currently it seems the Testing menu integration only works for the host
-   of the live share session. The terminal method should definitely work for
-   both the host and guests.
-5. The purpose of this task is to write some tests for
-   `convert_rate_to_percentage_difference()`. Use the existing tests as an
-   example. Decide between the two of you what you would like to test. Write at
-   least two tests. Participant B will now be typing with Participant A
-   reviewing and providing help along the way.
-6. Once your new tests run successfully, check how much you've improved the code
-   coverage.
-
-Congratulations! Your first pair programming session is complete. Getting
-comfortable with pair programming can take some time at first, but it is worth
-it in the long run as it allows for increased productivity, knowledge sharing,
-and real-time problem solving. Getting practice in at being both the driver and
-the navigator will ultimately make you a better programmer. There's also no
-"right" way to do it either - the real benefit will come from making it a habit
-as a team.
+- [Getting Started](exercise/1-getting-started.md)
+- [Task 1](exercise/1.1-task-1.md)
+- [Task 2](exercise/1.2-task-2.md)
